@@ -1,12 +1,19 @@
 <?php
+
 namespace FactoryMethod;
+
+require_once 'Product/CarProduct.php';
+require_once 'Product/DodgeCharger.php';
+require_once 'Product/DodgeDart.php';
+require_once 'CarFactory.php';
+
 use FactoryMethod\Product\CarProduct;
 use FactoryMethod\Product\DodgeDart;
 use FactoryMethod\Product\DodgeCharger;
 
 class DodgeFactory implements CarFactory
 {
-    public function createCar(string $carmodel): FactoryMethod\Product\CarProduct
+    public function createCar(string $carmodel): CarProduct
     {
         if ($carmodel == 'dart') {
             return new DodgeDart();

@@ -1,7 +1,7 @@
 <?php
-namespace Prototype;
+namespace DesignPatterns\Prototype;
 
-require_once 'BookPrototype.php';
+use DesignPatterns\Prototype\BookPrototype;
 
 class BookPHPPrototype extends BookPrototype
 {

@@ -1,6 +1,7 @@
 <?php
-namespace FactoryMethod;
-use FactoryMethod\Product\CarProduct;
+namespace DesignPatterns\FactoryMethod;
+
+use DesignPatterns\FactoryMethod\Product\CarProduct;
 
 interface CarFactory
 {

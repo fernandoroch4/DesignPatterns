@@ -1,5 +1,6 @@
 <?php
-namespace Singleton;
+namespace DesignPatterns\Singleton;
+
 
 class LogsSingleton
 {
@@ -14,7 +15,7 @@ class LogsSingleton
         $filename = 'logs.txt';
 
         $oldlogs = [];
-        if (filezise($filename) > 0) {
+        if (filesize($filename) > 0) {
             $filecontent = file_get_contents($filename);
             $oldlogs = json_decode($filecontent, true);
         }

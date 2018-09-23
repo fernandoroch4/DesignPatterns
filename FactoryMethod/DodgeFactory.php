@@ -1,15 +1,11 @@
 <?php
 
-namespace FactoryMethod;
+namespace DesignPatterns\FactoryMethod;
 
-require_once 'Product/CarProduct.php';
-require_once 'Product/DodgeCharger.php';
-require_once 'Product/DodgeDart.php';
-require_once 'CarFactory.php';
-
-use FactoryMethod\Product\CarProduct;
-use FactoryMethod\Product\DodgeDart;
-use FactoryMethod\Product\DodgeCharger;
+use DesignPatterns\FactoryMethod\Product\CarProduct;
+use DesignPatterns\FactoryMethod\Product\DodgeCharger;
+use DesignPatterns\FactoryMethod\Product\DodgeDart;
+use DesignPatterns\FactoryMethod\CarFactory;
 
 class DodgeFactory implements CarFactory
 {

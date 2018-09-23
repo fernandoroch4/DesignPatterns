@@ -1,7 +1,8 @@
 <?php
 
-require_once 'BookPHPPrototype.php';
-use Prototype;
+require_once '../vendor/autoload.php';
+
+use DesignPatterns\Prototype\BookPHPPrototype as BPHPP;
 
 $owners = [
     'Iron Man',
@@ -10,7 +11,7 @@ $owners = [
     'Thor'
 ];
 
-$phpbook = new Prototype\BookPHPPrototype();
+$phpbook = new BPHPP();
 $phpbook->setTitle('The Magic PHP for Superhero');
 
 foreach ($owners as $key => $owner) {

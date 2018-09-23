@@ -1,5 +1,5 @@
 <?php
-namespace FactoryMethod\Product;
+namespace DesignPatterns\FactoryMethod\Product;
 
 class DodgeCharger implements CarProduct
 {

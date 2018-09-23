@@ -1,15 +1,11 @@
 <?php
 
-namespace FactoryMethod;
+namespace DesignPatterns\FactoryMethod;
 
-require_once 'Product/CarProduct.php';
-require_once 'Product/TeslaModelS.php';
-require_once 'Product/TeslaModelX.php';
-require_once 'CarFactory.php';
-
-use FactoryMethod\Product\CarProduct;
-use FactoryMethod\Product\TeslaModelS;
-use FactoryMethod\Product\TeslaModelX;
+use DesignPatterns\FactoryMethod\Product\CarProduct;
+use DesignPatterns\FactoryMethod\Product\TeslaModelS;
+use DesignPatterns\FactoryMethod\Product\TeslaModelX;
+use DesignPatterns\FactoryMethod\CarFactory;
 
 class TeslaFactory implements CarFactory
 {

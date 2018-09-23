@@ -1,10 +1,12 @@
 <?php
 
-require_once 'TeslaFactory.php';
-require_once 'DodgeFactory.php';
+require_once '../vendor/autoload.php';
 
-$teslaFactory = new \FactoryMethod\TeslaFactory();
-$dodgeFactory = new \FactoryMethod\DodgeFactory();
+use DesignPatterns\FactoryMethod\TeslaFactory as TF;
+use DesignPatterns\FactoryMethod\DodgeFactory as DF;
+
+$teslaFactory = new TF();
+$dodgeFactory = new DF();
 
 try {
     $teslaModelX = $teslaFactory->createCar('x_model');

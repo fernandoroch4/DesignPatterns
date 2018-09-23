@@ -1,5 +1,5 @@
 <?php
-namespace Prototype;
+namespace DesignPatterns\Prototype;
 
 abstract class BookPrototype 
 {

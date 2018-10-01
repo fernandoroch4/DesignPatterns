@@ -17,6 +17,6 @@ abstract class CharacterDecorator extends Character
 
     public function getAttack(): float
     {
-        return $this->character->getAttack() + $this->getAttack;
+        return $this->character->getAttack() + $this->attack;
     }
 }
